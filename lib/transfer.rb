@@ -2,8 +2,8 @@ class Transfer
   
   attr_accessor :account1, :account2, :amount, :sender
   
-  def initialize( account1, account2, amount)
-    @account1 = account1
+  def initialize( sender, receiver, amount)
+    @sender = sender
     @account2 = account2
     @amount = amount
     @sender = sender
