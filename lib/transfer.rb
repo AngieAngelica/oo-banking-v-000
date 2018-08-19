@@ -14,7 +14,7 @@ class Transfer
   end
   
   def execute_transaction
-    unless status == "complete"
+    unless status == "complete" # to make sure the transaction executes only one time
     sender.balance -= amount
     receiver.balance += amount
     self.status = "complete"
