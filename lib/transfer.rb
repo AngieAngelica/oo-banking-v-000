@@ -20,7 +20,7 @@ class Transfer
     self.status = "complete"
     
     if not sender.valid? 
-      "Transaction rejected. Please check your account balance."
+     return "Transaction rejected. Please check your account balance."
     end  
   end
 end
