@@ -10,6 +10,6 @@ class Transfer
   end
   
   def valid?
-    sender.valid? && receiver.valid?
+    sender.valid? && receiver.valid? #using the methods of the Bankaccount class
   end
 end
