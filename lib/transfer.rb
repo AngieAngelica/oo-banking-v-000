@@ -21,5 +21,6 @@ class Transfer
     
     if not sender.valid? 
      puts "Transaction rejected. Please check your account balance."
+  
   end
 end
