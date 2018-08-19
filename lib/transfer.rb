@@ -12,4 +12,9 @@ class Transfer
   def valid?
     sender.valid? && receiver.valid? # def valid? is using the methods of the BankAccount class
   end
+  
+  def execute_transaction
+    sender.balance -= amount
+    receiver.balance += amount
+    self.status = "Complete"
 end
